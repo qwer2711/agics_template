@@ -1,0 +1,836 @@
+<h2>미디어쿼리 (Media Query)</h2>
+<div class="ex_box fl_row" style="margin-bottom: 30px; font-size: 20px;">
+    반응형 웹에서는 필수인 미디어쿼리는, 화면크기 마다 각각 다르게 CSS를 적용하는 것이다.<br />
+    화면 사이즈를 인식해 서로 다른 CSS를 적용시켜준다. 보통은 스마트폰, 태블릿 , PC 화면 3개 정도를 구분해준다.
+</div>
+<div class="colorscripter-code" style="
+                    color: #010101;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    position: relative !important;
+                  ">
+    <table class="colorscripter-code-table" style="
+                      margin: 0;
+                      padding: 0;
+                      width: 100%;
+                      border: none;
+                      background-color: #fafafa;
+                      border-radius: 4px;
+                    " cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="padding: 6px 0; text-align: left">
+                <div style="
+                            margin: 0;
+                            padding: 0;
+                            color: #010101;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 130%;
+                          ">
+                    <div style="padding: 0 6px; line-height: 130%">
+                        미디어쿼리1&nbsp;media&nbsp;width
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        &nbsp;
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:1440px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:1280px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:1024px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:768px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:440px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        &nbsp;
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        미디어쿼리2&nbsp;media&nbsp;width
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        &nbsp;
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:1220px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:1024px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:960px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:600px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:480px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        @media&nbsp;screen&nbsp;and&nbsp;(max-width:320px){}
+                    </div>
+                    <div style="padding: 0 6px; line-height: 130%">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="
+                            text-align: right;
+                            margin-top: -13px;
+                            margin-right: 5px;
+                            font-size: 9px;
+                            font-style: italic;
+                          ">
+                    <a href="http://colorscripter.com/info#e" target="_blank"
+                        style="color: #e5e5e5; text-decoration: none">Colored by Color Scripter</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="colorscripter-code" style="
+                    color: #010101;
+                    font-family: Consolas, 'Liberation Mono', Menlo, Courier,
+                      monospace !important;
+                    position: relative !important;
+                  ">
+    <table class="colorscripter-code-table" style="
+                      margin: 0;
+                      padding: 0;
+                      width: 100%;
+                      border: none;
+                      background-color: #fafafa;
+                      border-radius: 4px;
+                    " cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="padding: 6px 0; text-align: left">
+                <div style="
+                            margin: 0;
+                            padding: 0;
+                            color: #010101;
+                            font-family: Consolas, 'Liberation Mono', Menlo,
+                              Courier, monospace !important;
+                            line-height: 130%;
+                          ">
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&lt;!--&nbsp;HTML&nbsp;--</span><span
+                            style="color: #4da51b">&gt;</span><span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&lt;div&nbsp;class="box"</span><span
+                            style="color: #4da51b">&gt;</span><span style="color: #ff3399">&lt;/div</span><span
+                            style="color: #4da51b">&gt;</span><span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span><span style="color: #999999">/*&nbsp;CSS&nbsp;*/</span><span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">.box&nbsp;</span>{<span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;width</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">100vw</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;height</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">100vh</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">.box</span><span style="color: #4da51b">::after&nbsp;</span><span
+                            style="color: #ff3399"></span>{<span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;content</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">''</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;color</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">white</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;font-size</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">2rem</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;1440px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box&nbsp;</span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span
+                            style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;red</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box</span><span
+                            style="color: #4da51b">::after&nbsp;</span><span style="color: #ff3399"></span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;content</span><span
+                            style="color: #ff3399">:</span><span
+                            style="color: #0099cc">'@media&nbsp;screen&nbsp;and&nbsp;(max-width</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;1440px)'</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;color</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">white</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;font-size</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">2rem</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;1280px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box&nbsp;</span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span
+                            style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;orange</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box</span><span
+                            style="color: #4da51b">::after&nbsp;</span><span style="color: #ff3399"></span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;content</span><span
+                            style="color: #ff3399">:</span><span
+                            style="color: #0099cc">'@media&nbsp;screen&nbsp;and&nbsp;(max-width</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;1028px)'</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;color</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">white</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;font-size</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">2rem</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;1024px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box&nbsp;</span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span
+                            style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;yellow</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box</span><span
+                            style="color: #4da51b">::after&nbsp;</span><span style="color: #ff3399"></span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;content</span><span
+                            style="color: #ff3399">:</span><span
+                            style="color: #0099cc">'@media&nbsp;screen&nbsp;and&nbsp;(max-width</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;1024px)'</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;color</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">black</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;font-size</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">2rem</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;768px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box&nbsp;</span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span
+                            style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;green</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box</span><span
+                            style="color: #4da51b">::after&nbsp;</span><span style="color: #ff3399"></span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;content</span><span
+                            style="color: #ff3399">:</span><span
+                            style="color: #0099cc">'@media&nbsp;screen&nbsp;and&nbsp;(max-width</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;768px)'</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;color</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">white</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;font-size</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">2rem</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;440px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box&nbsp;</span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span
+                            style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;blue</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">&nbsp;&nbsp;&nbsp;&nbsp;.box</span><span
+                            style="color: #4da51b">::after&nbsp;</span><span style="color: #ff3399"></span>{<span
+                            style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;content</span><span
+                            style="color: #ff3399">:</span><span
+                            style="color: #0099cc">'@media&nbsp;screen&nbsp;and&nbsp;(max-width</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">&nbsp;440px)'</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;color</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">white</span><span
+                            style="color: #ff3399">;</span><span style="color: #0099cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0099cc">&nbsp;&nbsp;&nbsp;&nbsp;font-size</span><span
+                            style="color: #ff3399">:</span><span style="color: #0066cc">2rem</span><span
+                            style="color: #ff3399">;</span><span style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span><span style="color: #999999">/*&nbsp;2&nbsp;*/</span><span
+                            style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;1220px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;1024px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;960px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;600px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;480px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}<span style="color: #ff3399"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #ff3399">@media&nbsp;screen&nbsp;and&nbsp;</span>(<span
+                            style="color: #4da51b">max-width</span><span style="color: #ff3399">:</span><span
+                            style="color: #4da51b">&nbsp;320px</span>)<span style="color: #ff3399">&nbsp;</span>{<span
+                            style="color: #0066cc"></span>
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        <span style="color: #0066cc"></span>}
+                    </div>
+                    <div style="
+                              padding: 0 6px;
+
+                              line-height: 130%;
+                            ">
+                        &nbsp;
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
